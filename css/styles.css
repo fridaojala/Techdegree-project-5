@@ -7,27 +7,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.searchfield {
+input {
+    display: block;
     color: #929292;
     font-size: 14px;
     width: 40%;
     margin: 20px auto;
     border: 2px solid #d4d4d4;
-    padding: 0 10px;
+    padding: 15px;
     border-radius: 5px;
 }
 
-img {
-    max-width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+input:focus-visible {
+    outline: none;
 }
 
-main {
-    width: 60%;
+.photogallery {
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 25px;
+}
+
+a {
+    max-width: 200px;
+    margin: 0 auto;
 }
